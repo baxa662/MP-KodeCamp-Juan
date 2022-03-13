@@ -8,6 +8,7 @@ const buildCard = (title, photoUrl, price, productId) => {
     
     // Add classes to elements
     cardContainer.classList.add("card", "mt-2", "tarjetas-productos", "text-black");
+    cardImage.classList.add("cardImg")
     cardBody.classList.add("card-body");
     cardTitle.classList.add("card-title");
     cardText.classList.add("card-text");
@@ -16,8 +17,8 @@ const buildCard = (title, photoUrl, price, productId) => {
     // Add values to the elements
     cardImage.src = photoUrl;
     cardTitle.innerText = title;
-    cardText.innerText = `Price: $ ${price}`;
-    cardButton.innerText = "Details";
+    cardText.innerText = `Precio: $ ${price}`;
+    cardButton.innerText = "Detalles";
     cardButton.href = `details.html?productId=${productId}`;
   
     // Build structure
@@ -50,7 +51,7 @@ const buildCardDetails = (title, description, photoUrl, price, productId) => {
       cardContainer.classList.add("card", "mb-3", "centrar", "detalles", "mt-2");
       cardRow.classList.add("row", "g-0")
       cardColImg.classList.add("col-md-8")
-      cardImage.classList.add("img-fluid","rounded-start", "w-75")
+      cardImage.classList.add("img-fluid","rounded-start", "detailImg")
       cardColInfo.classList.add("col-md-4")
       cardBody.classList.add("card-body", "info-prod");
       cardNew.classList.add("card-text", "text-muted")
@@ -100,7 +101,7 @@ const buildCardDash = (title, description, photoUrl, price, productId) => {
     
     // Add classes to elements
     cardContainer.classList.add("card", "mt-2", "tarjetas-productos", "text-black");
-    cardImage.classList.add("mt-2","w-100")
+    cardImage.classList.add("mt-2","cardImg")
     cardBody.classList.add("card-body");
     cardTitle.classList.add("card-title");
     cardText.classList.add("card-text");
@@ -111,7 +112,7 @@ const buildCardDash = (title, description, photoUrl, price, productId) => {
     // Add values to the elements
     cardImage.src = photoUrl;
     cardTitle.innerText = title;
-    cardText.innerText =  `${description} \n Precio: $ ${price}`;
+    cardText.innerText =  `${description} \n Precio: $${price}`;
     cardButtonEdit.innerText = "Editar";
     cardButtonDel.innerText = "Eliminar";
     cardButtonEdit.setAttribute("data-bs-toggle","modal")
