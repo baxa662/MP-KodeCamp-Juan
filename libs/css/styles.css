@@ -1,0 +1,53 @@
+.dark-primary-color    { background: #512DA8; }
+.default-primary-color { background: #673AB7; }
+.light-primary-color   { background: #D1C4E9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #7C4DFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.centrar{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cuerpo-productos{
+  width: 90%;
+}
+
+.tarjetas-productos{
+  max-width: 18rem;
+  min-width: 13rem;
+}
+
+.icono-footer{
+  width: 10%;
+}
+
+.footer{
+ height: 200px;
+ width: 100%;
+}
+
+.detalles {
+  max-width: 1080px;
+  width: 80%;
+}
+
+.info-prod{
+  text-align: left;
+}
+
+.info-prod .precio {
+  font-size: 25px;
+}
+
+.info-prod .descripcion{
+  font-size: 18px;
+}
+
+.prod-nuevo{
+  font-size: 15px;
+  color: #b8b3b3;
+}
